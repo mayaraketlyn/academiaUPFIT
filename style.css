@@ -19,7 +19,7 @@ header {
 
 /* Evita que o conteúdo fique escondido atrás do header */
 body {
-    padding-top: 90px;
+    padding-top: 100px;
 }
 
 /* ------------------------- */
@@ -105,8 +105,9 @@ nav a:hover {
     background-color: orange; /* mantém o fundo laranja */
 }
 .banner {
-    width: 100%;            /* largura total da página */
-    height: 550px;          /* altura da div */
+    width: 100%;   
+    left: 105%;        /* largura total da página */
+    height: 700px;          /* altura da div */
     background-image: url('Black Fitness Gym Banner.png');
     background-size: cover;  /* cobre toda a div, mantém proporção */
     background-position: center; /* centraliza a imagem */
@@ -706,7 +707,7 @@ body{
   background:var(--bg);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  
+  padding:40px;
 }
 
 /* Layout principal */
