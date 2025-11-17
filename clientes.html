@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>UpFit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Cabeçalho -->
+<header>
+    <!-- Logo -->
+    <div class="logo">Up<span>Fit</span></div>
+
+    <!-- Botões do cabeçalho -->
+    <nav>
+        
+        <a href="cliente.html">Espaço do Cliente</a>
+        
+        
+
+        <div class="menu-hamburguer" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+ <main class="container">
+    <section class="left">
+      <div class="brand">
+        <span class="smart">Up</span><span class="fit">fit</span>
+      </div>
+
+      <h3>Este é o canal de gerenciamento da sua conta.</h3>
+
+      <p class="intro">Por aqui você consegue:</p>
+
+      <ul class="benefits">
+        <li>Atualizar dados pessoais</li>
+        <li>Consultar histórico de pagamentos</li>
+        <li>Trocar de unidade</li>
+        <li>Alterar forma de pagamento</li>
+        <li>Troca de plano</li>
+      </ul>
+    </section>
+
+    <section class="right">
+      <div class="card">
+        <h2>Boas–vindas ao Espaço do Cliente</h2>
+        <p class="sub">Use seu documento de acesso para gerenciar a sua conta!</p>
+
+        <label class="lbl">Documento</label>
+        <div class="row">
+          <select class="doc-select" aria-label="Tipo de documento">
+            <option>CPF</option>
+            <option>RG</option>
+            <option>Passaporte</option>
+          </select>
+          <input type="text" class="doc-input" placeholder="Seu documento" />
+        </div>
+
+        <button class="enter-btn">ENTRAR</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="whatsapp-btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M20.52 3.48A11.86 11.86 0 0012 0C5.372 0 .036 4.896 0 11.207.01 13.496.8 15.66 2.19 17.42L0 24l6.98-2.2c1.613.86 3.44 1.306 5.02 1.306 6.63 0 12.01-4.9 12.01-11 0-3.1-1.22-5.96-3.49-8.63z" fill="#fff"/>
+    </svg>
+  </a>
+</body>
+</html>

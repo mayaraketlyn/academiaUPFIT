@@ -1,0 +1,839 @@
+/* ------------------------- */
+/* ESTILO DO CABEÇALHO FIXO */
+/* ------------------------- */
+
+header {
+    display: flex;                   /* logo e menu lado a lado */
+    justify-content: space-between;  /* separa logo do menu */
+    align-items: center;             /* centraliza verticalmente */
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    position: fixed;   /* fixa no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;     /* fica acima de tudo */
+}
+
+/* Evita que o conteúdo fique escondido atrás do header */
+body {
+    padding-top: 90px;
+}
+
+/* ------------------------- */
+/* LOGO                      */
+/* ------------------------- */
+
+.logo {
+    font-size: 34px;
+    font-weight: 600;
+    font-family: "Boldonse", system-ui;
+}
+
+.logo span { 
+    color: orange;
+    font-size: 34px;
+}
+
+/* ------------------------- */
+/* MENU DE NAVEGAÇÃO         */
+/* ------------------------- */
+
+nav {
+    display: flex;
+    margin-left: auto;   /* empurra nav para a direita */
+    gap: 10px;           /* espaço entre os botões */
+    align-items: center;
+}
+
+/* TODOS OS BOTÕES NAV MESMO TAMANHO */
+nav a {
+    display: inline-block;      /* garante que o width funcione */
+    width: 160px;               /* mesmo tamanho para todos */
+    text-align: center;         /* centraliza o texto */
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-family: system-ui, Arial;
+}
+
+/* Hover: muda apenas a cor do texto */
+nav a:hover {
+    background-color: lightgrey;   /* mantém fundo laranja */
+    color: black;               /* muda apenas a cor da letra */
+}
+
+/* Menu hambúrguer */
+.menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;  /* distância do último botão */
+}
+
+.menu-hamburguer span {
+    display: block;
+    height: 2px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Botão padrão (Buscar Academia) */
+.botao {
+    background-color: orange;  /* fundo laranja */
+    color: white;              /* texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;   /* transição suave da cor do texto */
+}
+
+/* Hover: muda apenas a cor do texto */
+.botao:hover {
+    color: black;             /* cor do texto ao passar o mouse */
+    background-color: orange; /* mantém o fundo laranja */
+}
+.banner {
+    width: 100%;            /* largura total da página */
+    height: 550px;          /* altura da div */
+    background-image: url('Black Fitness Gym Banner.png');
+    background-size: cover;  /* cobre toda a div, mantém proporção */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* não repete a imagem */
+    border-radius: 10px;
+}
+
+
+.encontrar {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.encontrar span {
+    color: orange;       /* destaca “mais Proxima” */
+    font-weight: 600;
+}
+.banners {
+    width: 100%;
+    height: 300px; /* altura menor */
+    background-image: url('Linkedin\ banner\ simples\ preto\ e\ branco.png'); /* substitua pela sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center;     /* centraliza horizontalmente */
+    text-align: center;
+    position: relative;
+    border-radius: 12px; /* cantos arredondados opcionais */
+    overflow: hidden;
+}
+.banner2 {
+    width: 50%;
+    height: 250px; /* altura menor */
+    background-image: url('baneerkj.png'); /* substitua pela sua imagem */
+    
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center;     /* centraliza horizontalmente */
+    text-align: center;
+    
+    max-height: 15px;
+    margin-right: 15px;
+}
+
+/* Título */
+.banners h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.banners h1 span {
+    color: orange;
+    font-weight: 600;
+}
+
+/* Barra de pesquisa */
+.search-container {
+    display: flex;
+    width: 70%;
+    max-width: 500px;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background-color: darkorange;
+}
+
+
+.mensalidades {
+    font-family: 'Poppins', sans-serif; /* mesma fonte do título */
+    font-weight: 300;    /* letra fina */
+    font-size: 20px;     /* menor que o h1 */
+    text-align: center;  /* centralizado */
+    color: #333;         /* cor escura */
+    margin-top: 20px;    /* espaçamento acima */
+}
+ .planos {
+    display: flex;
+    justify-content: center; /* centraliza os cards */
+    gap: 20px;               /* espaço entre os cards */
+    flex-wrap: wrap;         /* quebra em coluna em telas pequenas */
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plano-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.plano-desc {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.plano-preco {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.plano-fidelidade {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.btn-contratar {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-contratar:hover {
+    background-color: darkorange;
+}
+
+.plano-beneficios {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+}
+body {
+    /* Imagem de textura */
+   
+    background-repeat: repeat;       /* repete a textura */
+    background-size: auto;           /* mantém o tamanho original da textura */
+    background-attachment: fixed;    /* fixa a textura quando rolar a página */
+    background-position: top left;   /* começa no canto superior esquerdo */
+    
+    /* Garante que o conteúdo fique visível por cima */
+    position: relative;
+    z-index: 0;
+}
+
+.imagens-centralizadas {
+    display: flex;
+    justify-content: center;  /* centraliza horizontalmente */
+    gap: 20px;               /* espaço entre as imagens */
+    margin: 50px 0;          /* espaço acima e abaixo da seção */
+    flex-wrap: wrap;         /* quebra linha se a tela for pequena */
+}
+
+.imagens-centralizadas img {
+    width: 250px;            /* largura média das imagens */
+    height: auto;            /* mantém proporção */
+    border-radius: 12px;     /* cantos arredondados opcionais */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+    transition: transform 0.3s;
+}
+
+.imagens-centralizadas img:hover {
+    transform: scale(1.05); /* leve zoom ao passar o mouse */
+}
+
+.imagens-centralizadas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.imagem-card {
+    text-align: center; /* centraliza imagem e descrição */
+}
+
+.imagem-card img {
+    width: 300px;      /* largura fixa */
+    height: 200px;     /* altura fixa */
+    object-fit: cover; /* mantém proporção e corta excesso */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.imagem-card img:hover {
+    transform: scale(1.05);
+}
+
+.descricao {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+    background: #f8f8f8;
+}
+
+.card {
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tag {
+    background: orangered; /* amarelo Smart Fit */
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    background: orangered;
+    padding: 10px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: orangered;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    .planos {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .planos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    .search-container {
+        width: 90%;
+    }
+}
+/* ------------------------- */
+/* CARDS DE AULAS EXCLUSIVAS */
+/* ------------------------- */
+.cards-aulas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+    background: #f0f0f0; /* leve fundo diferente para destacar a seção */
+}
+
+.card-aula {
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-aula:hover {
+    transform: translateY(-6px);
+}
+
+.card-aula img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-aula .tag {
+    background: orange;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-aula .info {
+    padding: 15px;
+}
+
+.card-aula .info p {
+    margin: 5px 0;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-aula .desc {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.card-aula .btn {
+    display: inline-block;
+    margin-top: 12px;
+    background: orange;
+    padding: 10px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition: 0.3s;
+}
+
+.card-aula .btn:hover {
+    background: orangered;
+}
+
+.app-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background: #ffe4cf; /* bege igual da imagem */
+  gap: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.app-text {
+  max-width: 50%;
+}
+
+.app-text h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.app-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.app-text ul li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.gratis {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.downloads {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.qr {
+  width: 120px;
+}
+
+.lojas img {
+  display: block;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.app-image img {
+  width: 380px;
+} 
+
+/* ----------- SERVIÇOS ADICIONAIS ----------- */
+.produtos-servicos {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fffced;
+}
+
+.titulo-servicos {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitulo-servicos {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.cards-servicos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.servico-card {
+    width: 350px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: left;
+    
+}
+
+.servico-card:hover {
+  box-shadow: 0 0 0 3px orange;
+}
+
+
+
+
+.servico-card:hover {
+    transform: translateY(-6px);
+}
+
+.servico-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.servico-content {
+    padding: 20px;
+}
+
+.categoria {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.servico-titulo {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.servico-desc {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.servico-preco {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+.servico-fidelidade {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.servico-btn {
+    background: orange;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.servico-btn:hover {
+    background: orangered;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    .cards-aulas {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .cards-aulas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+:root{
+  --bg:#ffffff;
+  --text:#222;
+  --muted:#6b6b6b;
+  --accent:#f6b000; /* amarelo semelhante */
+  --card-bg:#fff;
+  --border:#e6e6e6;
+  --black-btn:#000;
+  --radius:12px;
+  --max-width:1100px;
+  font-size:16px;
+}
+
+/* Reset simples */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: 'Poppins', sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:40px;
+}
+
+/* Layout principal */
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 520px;
+  gap:32px;
+  align-items:center;
+  min-height:70vh;
+}
+
+/* Esquerda (logo e lista) */
+.left .brand{
+  font-weight:700;
+  font-size:56px;
+  margin-bottom:18px;
+  display:flex;
+  align-items:flex-end;
+  gap:6px;
+}
+.brand .smart{ color:#111 }
+.brand .fit{
+  color:var(--accent);
+  font-weight:800;
+  transform: translateY(4px);
+}
+
+/* Texto e lista */
+.left h3{
+  font-size:18px;
+  margin-bottom:12px;
+  font-weight:600;
+}
+.left .intro{
+  margin-bottom:12px;
+  color:var(--muted);
+}
+.benefits{
+  list-style:disc;
+  margin-left:18px;
+  color:var(--muted);
+  line-height:1.8;
+}
+.benefits li{ margin-bottom:6px }
+
+/* Card direito */
+.right .card{
+  background:var(--card-bg);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:28px 30px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+}
+.right .card h2{
+  text-align:center;
+  margin-bottom:6px;
+  font-size:20px;
+}
+.right .card .sub{
+  text-align:center;
+  color:var(--muted);
+  margin-bottom:18px;
+}
+
+/* label e row */
+.lbl{ display:block; font-weight:600; color:var(--muted); margin-bottom:10px; }
+.row{
+  display:flex;
+  gap:12px;
+  margin-bottom:18px;
+}
+.doc-select, .doc-input{
+  padding:14px 16px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  font-size:15px;
+  outline:none;
+}
+.doc-select{ width:160px; background:#fff; -webkit-appearance:none; appearance:none; }
+.doc-input{ flex:1 }
+
+/* botão entrar */
+.enter-btn{
+  width:100%;
+  padding:14px 18px;
+  border-radius:30px;
+  border:none;
+  background:var(--black-btn);
+  color:#fff;
+  font-weight:700;
+  letter-spacing:1px;
+  cursor:pointer;
+  margin-top:8px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Botão WhatsApp flutuante */
+.whatsapp-btn{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#25d366;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-decoration:none;
+  z-index:999;
+}
+.whatsapp-btn svg{ filter: drop-shadow(0 0 0 rgba(0,0,0,0.12)); }
+
+/* Responsividade */
+@media (max-width:980px){
+  .container{ grid-template-columns:1fr; gap:24px; padding:20px; }
+  .left{ order:2 }
+  .right{ order:1 }
+  .brand{ font-size:48px }
+  .right .card{ padding:20px }
+}
+@media (max-width:420px){
+  .brand{ font-size:40px }
+  .doc-select{ width:120px; padding:12px }
+  .doc-input{ padding:12px }
+  .enter-btn{ padding:12px }
+}
